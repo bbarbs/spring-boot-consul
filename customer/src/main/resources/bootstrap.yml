@@ -1,0 +1,10 @@
+#disable management endpoint provided by actuator module
+management:
+  security:
+    enabled: false
+
+#disable health check indicator of consul.
+#compatibilty issue in consul 1.0 version.
+  health:
+    consul:
+      enabled: false

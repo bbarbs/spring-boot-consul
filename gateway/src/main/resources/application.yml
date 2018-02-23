@@ -1,0 +1,22 @@
+server:
+  port: 8090
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 4000
+
+feign:
+  hystrix:
+    enabled: true
+
+ribbon:
+    eureka:
+      enabled: false
+
+spring:
+  application:
+    name: gateway-service
