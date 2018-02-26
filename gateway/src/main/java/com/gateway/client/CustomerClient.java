@@ -12,7 +12,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 /**
  * Customers rest api.
  * <p>
- * Note: It use the ribbon for client load balancer as added in yml for list of servers.
+ * Note: The name used is the one found in consul service for customer.
  */
 
 @FeignClient(
